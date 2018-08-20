@@ -1,0 +1,9 @@
+version: '3'
+services:
+  ntq-cms:
+    image: ghost:1-alpine
+    container_name: ntq.cms
+    ports:
+      - "2368:2368"
+    volumes:
+      - ./content:/var/lib/ghost/content
